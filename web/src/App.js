@@ -74,7 +74,7 @@ const Appz = styled.div`
     background: #eeeeee;
     background-image: url("/img/4dot.png");
     color: black;
-    text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+    text-shadow: -1px 0 red, 1px 0 cyan;
 
     .trusted-logo{
       display: flex;
@@ -82,6 +82,7 @@ const Appz = styled.div`
       
       img {
         padding: 1em;
+        padding-top:0;
       }
     }
   }
@@ -144,12 +145,12 @@ const App = () => {
         <p>TODO : How it work</p>
       </section>
       <section className='trusted'>
-        <h2>
+        <h3>
           <span role='img' aria-label='Terms'>
             👍🏻
           </span>{' '}
           TRUSTED BY
-        </h2>
+        </h3>
         <div className='trusted-logo'>
           <img width='auto' height='64px' alt='Disrupt Technology Venture' src='/img/disrupt-logo.svg' />
           <img width='auto' height='64px' alt='Stormbreaker Venture' src='/img/stormbreaker-logo.svg' />
