@@ -6,14 +6,15 @@ const Appz = styled.div`
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+  background: white;
 
   > * {
-    padding: 10px;
+    padding: 0.5em;
     flex: 1 100%;
   }
 
   .header {
-    background: black;
+    background: skyblue;
     display: flex;
     align-items: center;
     width: 100%;
@@ -54,24 +55,11 @@ const Appz = styled.div`
     display: block;
     padding: 0.5em;
     color: white;
-    border: solid;
-    border-color: black;
-    border-width: 1px;
+    border: 1px solid rgba(0,0,0,0);
   }
 
   .navigation a:hover {
-    border: solid;
-    border-color: coral;
-    border-width: 1px;
-  }
-
-  .footer {
-    background: black;
-    color: whitesmoke;
-  }
-
-  .footer span {
-    color: coral;
+    border: 1px solid coral;
   }
 
   .hero {
@@ -80,6 +68,47 @@ const Appz = styled.div`
 
   .main {
     text-align: center;
+  }
+
+  .trusted {
+    background: #eeeeee;
+    background-image: url("/img/4dot.png");
+    color: black;
+    text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+
+    .trusted-logo{
+      display: flex;
+      justify-content: center;
+      
+      img {
+        padding: 1em;
+      }
+    }
+  }
+
+  .leg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgrey;
+    background-image: url("/img/4dot.png");
+    height: 2em;
+
+    small {
+      padding: 1em;
+    }
+  }
+
+  .footer {
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    background: darkgrey;
+    background-image: url("/img/4dot.png");
+    
+    span {
+    color: coral;
   }
 `
 
@@ -97,10 +126,10 @@ const App = () => {
               <a href='#why'>Why</a>
             </li>
             <li>
-              <a href='#course'>Course</a>
+              <a href='#learn'>Learn</a>
             </li>
             <li>
-              <a href='#quiz'>Quiz</a>
+              <a href='#test'>Test</a>
             </li>
             <li>
               <a href='#faq'>FAQ</a>
@@ -108,18 +137,45 @@ const App = () => {
           </ul>
         </div>
       </header>
-      <article className='main'>
-        <p>Why</p>
-      </article>
-      <section className='course'>
-        <p>Course</p>
+      <section className='hello'>
+        <p>Hello</p>
       </section>
-      <section className='quiz'>
-        <p>Quiz</p>
+      <section className='how'>
+        <p>TODO : How it work</p>
+      </section>
+      <section className='trusted'>
+        <h2>
+          <span role='img' aria-label='Terms'>
+            👍🏻
+          </span>{' '}
+          TRUSTED BY
+        </h2>
+        <div className='trusted-logo'>
+          <img width='auto' height='64px' alt='Disrupt Technology Venture' src='/img/disrupt-logo.svg' />
+          <img width='auto' height='64px' alt='Stormbreaker Venture' src='/img/stormbreaker-logo.svg' />
+        </div>
+      </section>
+      <section className='leg'>
+        <a href='/policy'>
+          <small>
+            <span role='img' aria-label='Terms'>
+              🔏
+            </span>
+            Privacy Policy
+          </small>
+        </a>
+        <a href='/terms'>
+          <small>
+            <span role='img' aria-label='Terms'>
+              📝
+            </span>
+            Terms
+          </small>
+        </a>
       </section>
       <footer className='footer'>
         <small>
-          made w/ <span>❤</span> foxfox.io
+          made w/ <span>❤</span> © 2019 FOXFOX CO.,LTD.
         </small>
       </footer>
     </Appz>

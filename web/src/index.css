@@ -8,10 +8,22 @@ body {
   min-height: 100%;
   display: flex;
   overflow: hidden;
-  background: black;
-  color: white;
+  background: grey;
+  background-image: url("/img/4dot.png");
 }
 
 small {
   font-size: xx-small;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: coral;
 }
