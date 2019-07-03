@@ -157,6 +157,14 @@ const App = () => {
         </div>
       </section>
       <section className='leg'>
+        <a href='mailto:info@foxfox.io'>
+          <small>
+            <span role='img' aria-label='Contact'>
+              ✉️
+            </span>
+            info<span>@</span>foxfox.io
+          </small>
+        </a>
         <a href='/policy'>
           <small>
             <span role='img' aria-label='Terms'>
@@ -176,7 +184,7 @@ const App = () => {
       </section>
       <footer className='footer'>
         <small>
-          made w/ <span>❤</span> © 2019 FOXFOX CO.,LTD.
+          made with <span>❤</span> © 2019 FOXFOX CO.,LTD.
         </small>
       </footer>
     </Appz>
