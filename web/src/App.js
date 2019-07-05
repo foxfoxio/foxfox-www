@@ -7,6 +7,8 @@ const Appz = styled.div`
   font-weight: bold;
   text-align: center;
   background: white;
+  text-align: center;
+  font-family: LL Circular Pro Medium Web, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
 
   > * {
     padding: 0.5em;
@@ -62,12 +64,18 @@ const Appz = styled.div`
     border: 1px solid coral;
   }
 
-  .hero {
-    text-align: center;
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 38px;
   }
 
-  .main {
-    text-align: center;
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #8e9aa3;
   }
 
   .trusted {
@@ -130,19 +138,32 @@ const App = () => {
               <a href='#learn'>Learn</a>
             </li>
             <li>
-              <a href='#test'>Test</a>
+              <a href='#play'>Play</a>
             </li>
             <li>
-              <a href='#faq'>FAQ</a>
+              <a href='#enjoy'>Enjoy</a>
             </li>
           </ul>
         </div>
       </header>
-      <section className='hello'>
-        <p>Hello</p>
+      <section className='why'>
+        <div>
+          What I need to learn to become a
+          <select>
+            <option value='ds'>Data Scientist</option>
+            <option value='de'>Data Engineer</option>
+            <option value='bd'>Blockchain Developer</option>
+            <option value='fd'>Fullstack Developer</option>
+          </select>
+        </div>
+        <div>\</div>
+        <div>
+          <img alt='duck' src='/img/duck-l.png' width='16px' height='auto' />
+        </div>
       </section>
-      <section className='how'>
-        <p>TODO : How it work</p>
+      <section className='learn'>
+        <h2>For everyone.</h2>
+        <p>Let's enjoy intuitive moment.</p>
       </section>
       <section className='trusted'>
         <h3>
