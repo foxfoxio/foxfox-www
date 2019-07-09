@@ -132,9 +132,6 @@ const App = () => {
         <div className='header-right'>
           <ul className='navigation'>
             <li>
-              <a href='#why'>Why</a>
-            </li>
-            <li>
               <a href='#learn'>Learn</a>
             </li>
             <li>
@@ -146,7 +143,7 @@ const App = () => {
           </ul>
         </div>
       </header>
-      <section className='why'>
+      <section className='learn'>
         <div>
           What I need to learn to become a
           <select>
@@ -161,9 +158,9 @@ const App = () => {
           <img alt='duck' src='/img/duck-l.png' width='16px' height='auto' />
         </div>
       </section>
-      <section className='learn'>
+      <section className='play'>
         <h2>For everyone.</h2>
-        <p>Let's enjoy intuitive moment.</p>
+        <p>Let's enjoy your new skills!</p>
       </section>
       <section className='trusted'>
         <h3>
@@ -175,6 +172,7 @@ const App = () => {
         <div className='trusted-logo'>
           <img width='auto' height='64px' alt='Disrupt Technology Venture' src='/img/disrupt-logo.svg' />
           <img width='auto' height='64px' alt='Stormbreaker Venture' src='/img/stormbreaker-logo.svg' />
+          <img width='auto' height='64px' alt='สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)' src='/img/depa-logo.png' />
         </div>
       </section>
       <section className='leg'>
