@@ -6,7 +6,7 @@ const font_family =
 const Appz = styled.div`
   display: flex;
   flex-flow: row wrap;
-  font-weight: bold;
+
   text-align: center;
   background: white;
   text-align: center;
@@ -18,7 +18,7 @@ const Appz = styled.div`
   }
 
   .header {
-    background: skyblue;
+    background: deepskyblue;
     display: flex;
     align-items: center;
     width: 100%;
@@ -63,7 +63,9 @@ const Appz = styled.div`
   }
 
   .navigation a:hover {
-    border: 1px solid coral;
+    border-radius: 8px;
+    background-color: white;
+    color: deepskyblue;
   }
 
   h2 {
@@ -84,13 +86,54 @@ const Appz = styled.div`
     font-family: ${font_family};
   }
 
+  .icon {
+    image-rendering: pixelated;
+  }
+
   h3 {
     text-shadow: -1px 0 red, 1px 0 cyan;
-    margin-bottom: 2em;
+  }
+
+  .learn {
+    display: flex;
+    background-image: url('/img/home/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat
+    background-position: 40% 25%;
+    height: 50vh;
+    
+    .title {
+      margin: auto;
+      margin-bottom: 10vh;
+      
+      div {
+        font-weight: 400;
+        font-size: 2em;
+        text-shadow: -1px 0 red, 1px 0 cyan;
+      }
+    }
+
+    .icon {
+      width: auto;
+      height: 64px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      background-position: 50% 60%;
+      height: 72vh;
+
+      .title {
+        margin-bottom: 20vh;
+      }
+
+      .icon {
+        height: 128px;
+      }
+    }
   }
 
   .team {
-    width: 100%;
+    overflow: hidden;
 
     div {
       display: flex;
@@ -100,10 +143,18 @@ const Appz = styled.div`
       margin: auto;
 
       img {
-        width: 6em;
-        height: 6em;
+        width: auto;
+        height: 4em;
         border-radius: 50%;
-        padding: 0.25em;
+        border-color: powderblue;
+        border-width: thick;
+        border-style: solid;
+        margin: 0.5em;
+
+        @media only screen and (min-width: 768px) {
+          height: 6em;
+          margin: 1em;
+        }
       }
 
       div {
@@ -124,8 +175,8 @@ const Appz = styled.div`
   }
 
   .trusted {
-    width: 100%;
     margin-bottom: 1em;
+    overflow: hidden;
 
     div {
       display: flex;
@@ -136,6 +187,12 @@ const Appz = styled.div`
       img {
         padding-top: 0;
         margin: 0.5em;
+        width: auto;
+        height: 3em;
+
+        @media only screen and (min-width: 768px) {
+          height: 4em;
+        }
       }
     }
   }
@@ -144,7 +201,7 @@ const Appz = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: lightgrey;
+    background: lightskyblue;
     background-image: url('/img/4dot.png');
     height: 2em;
 
@@ -158,7 +215,7 @@ const Appz = styled.div`
 
     display: flex;
     justify-content: space-around;
-    background: darkgrey;
+    background: deepskyblue;
     background-image: url('/img/4dot.png');
 
     span {
@@ -190,25 +247,15 @@ const App = () => {
         </div>
       </header>
       <section className='learn'>
-        <div>
-          <p>
-            I want to be{' '}
-            <select>
-              <option value='ds'>Data Scientist</option>
-              <option value='de'>Data Engineer</option>
-              <option value='bd'>Blockchain Developer</option>
-              <option value='fd'>Fullstack Developer</option>
-            </select>
-          </p>
-        </div>
-        <div>\</div>
-        <div>
-          <img alt='duck' src='/img/duck-l.png' width='16px' height='auto' />
+        <div className='title'>
+          <div>Learning is fun!</div>
+          <div>/</div>
+          <img className='icon' alt='fox' src='/img/fox.png' />
         </div>
       </section>
       <section className='play'>
-        <h2>For everyone.</h2>
-        <p>Let's enjoy your new skills!</p>
+        <h2>Coming Soon!</h2>
+        <p>It's time to change how we learn :)</p>
       </section>
       <section className='team'>
         <h3>
@@ -245,7 +292,7 @@ const App = () => {
               <span role='img' aria-label='Terms'>
                 👨🏻‍🔬
               </span>
-              Data Analysis
+              Data Analyst
             </small>
           </div>
           <div>
@@ -268,9 +315,9 @@ const App = () => {
           TRUSTED BY
         </h3>
         <div>
-          <img width='auto' height='64px' alt='Disrupt Technology Venture' src='/img/disrupt-logo.svg' />
-          <img width='auto' height='64px' alt='Stormbreaker Venture' src='/img/stormbreaker-logo.svg' />
-          <img width='auto' height='64px' alt='สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)' src='/img/depa-logo.png' />
+          <img alt='Disrupt Technology Venture' src='/img/disrupt-logo.svg' />
+          <img alt='Stormbreaker Venture' src='/img/stormbreaker-logo.svg' />
+          <img alt='สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)' src='/img/depa-logo.png' />
         </div>
       </section>
       <section className='leg'>
