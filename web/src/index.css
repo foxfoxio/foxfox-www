@@ -7,9 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
   display: flex;
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden;
   background: grey;
-  background-image: url("/img/4dot.png");
 }
 
 small {
@@ -26,4 +26,8 @@ a:link {
 
 a:hover {
   color: coral;
+}
+
+#root {
+  width: 100%;
 }

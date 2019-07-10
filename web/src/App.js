@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const font_family =
+  'LL Circular Pro Medium Web, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif'
 const Appz = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -8,7 +10,7 @@ const Appz = styled.div`
   text-align: center;
   background: white;
   text-align: center;
-  font-family: LL Circular Pro Medium Web, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
+  font-family: ${font_family};
 
   > * {
     padding: 0.5em;
@@ -57,7 +59,7 @@ const Appz = styled.div`
     display: block;
     padding: 0.5em;
     color: white;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid rgba(0, 0, 0, 0);
   }
 
   .navigation a:hover {
@@ -74,23 +76,66 @@ const Appz = styled.div`
   p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1em;
     color: #8e9aa3;
   }
 
-  .trusted {
-    background: #eeeeee;
-    background-image: url("/img/4dot.png");
-    color: black;
-    text-shadow: -1px 0 red, 1px 0 cyan;
+  select {
+    font-family: ${font_family};
+  }
 
-    .trusted-logo{
+  h3 {
+    text-shadow: -1px 0 red, 1px 0 cyan;
+    margin-bottom: 2em;
+  }
+
+  .team {
+    width: 100%;
+
+    div {
       display: flex;
-      justify-content: center;
-      
+      justify-content: space-evenly;
+      align-items: center;
+      max-width: 40em;
+      margin: auto;
+
       img {
-        padding: 1em;
-        padding-top:0;
+        width: 6em;
+        height: 6em;
+        border-radius: 50%;
+        padding: 0.25em;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em;
+
+        span {
+          font-weight: 400;
+          color: darkgrey;
+
+          small {
+            color: coral;
+          }
+        }
+      }
+    }
+  }
+
+  .trusted {
+    width: 100%;
+    margin-bottom: 1em;
+
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      max-width: 40em;
+      margin: auto;
+
+      img {
+        padding-top: 0;
+        margin: 0.5em;
       }
     }
   }
@@ -100,7 +145,7 @@ const Appz = styled.div`
     justify-content: center;
     align-items: center;
     background: lightgrey;
-    background-image: url("/img/4dot.png");
+    background-image: url('/img/4dot.png');
     height: 2em;
 
     small {
@@ -114,10 +159,11 @@ const Appz = styled.div`
     display: flex;
     justify-content: space-around;
     background: darkgrey;
-    background-image: url("/img/4dot.png");
-    
+    background-image: url('/img/4dot.png');
+
     span {
-    color: coral;
+      color: coral;
+    }
   }
 `
 
@@ -145,13 +191,15 @@ const App = () => {
       </header>
       <section className='learn'>
         <div>
-          What I need to learn to become a
-          <select>
-            <option value='ds'>Data Scientist</option>
-            <option value='de'>Data Engineer</option>
-            <option value='bd'>Blockchain Developer</option>
-            <option value='fd'>Fullstack Developer</option>
-          </select>
+          <p>
+            I want to be{' '}
+            <select>
+              <option value='ds'>Data Scientist</option>
+              <option value='de'>Data Engineer</option>
+              <option value='bd'>Blockchain Developer</option>
+              <option value='fd'>Fullstack Developer</option>
+            </select>
+          </p>
         </div>
         <div>\</div>
         <div>
@@ -162,6 +210,56 @@ const App = () => {
         <h2>For everyone.</h2>
         <p>Let's enjoy your new skills!</p>
       </section>
+      <section className='team'>
+        <h3>
+          <span role='img' aria-label='Terms'>
+            🦊
+          </span>{' '}
+          TEAM
+        </h3>
+        <div>
+          <div>
+            <img width='auto' alt='katopz' src='/img/home/katopz.jpg' />
+            <span>KATOPZ</span>
+            <small>
+              <span role='img' aria-label='Terms'>
+                👨🏻‍💻
+              </span>
+              Full Stacks Developer
+            </small>
+          </div>
+          <div>
+            <img width='auto' alt='ying' src='/img/home/ying.jpg' />
+            <span>YING</span>
+            <small>
+              <span role='img' aria-label='Terms'>
+                👩🏻‍🔬
+              </span>
+              Data Scientist
+            </small>
+          </div>
+          <div>
+            <img width='auto' alt='toy' src='/img/home/toy.jpg' />
+            <span>TOY</span>
+            <small>
+              <span role='img' aria-label='Terms'>
+                👨🏻‍🔬
+              </span>
+              Data Analysis
+            </small>
+          </div>
+          <div>
+            <img width='auto' alt='tay' src='/img/home/tay.jpg' />
+            <span>TAY</span>
+            <small>
+              <span role='img' aria-label='Terms'>
+                👨🏻‍💻
+              </span>
+              Blockchain Developer
+            </small>
+          </div>
+        </div>
+      </section>
       <section className='trusted'>
         <h3>
           <span role='img' aria-label='Terms'>
@@ -169,7 +267,7 @@ const App = () => {
           </span>{' '}
           TRUSTED BY
         </h3>
-        <div className='trusted-logo'>
+        <div>
           <img width='auto' height='64px' alt='Disrupt Technology Venture' src='/img/disrupt-logo.svg' />
           <img width='auto' height='64px' alt='Stormbreaker Venture' src='/img/stormbreaker-logo.svg' />
           <img width='auto' height='64px' alt='สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)' src='/img/depa-logo.png' />
