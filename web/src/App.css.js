@@ -43,7 +43,7 @@ export const Heroz = styled.section`
 `
 export const Learnz = styled.section`
   span {
-    span {
+    span:first-child {
       margin-left: -64px;
 
       div {

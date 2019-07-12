@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Appz, Heroz, Learnz, Playz, Enjoyz } from './App.css'
+import Course from './Course'
 
 const App = () => {
   return (
@@ -40,17 +41,18 @@ const App = () => {
         </h3>
         <span>
           <span>
-            Let's change how we learn
+            Let's learning by doing
             <div>\</div>
           </span>
           <img alt='kat' src='/img/kat.png' width='32px' height='auto' />
         </span>{' '}
         <span className='duck'>
-          <small>wow</small>
+          <small>wow!</small>
           <small>/</small>
           <img alt='duck' src='/img/duck.png' width='16px' height='auto' />
         </span>
       </Learnz>
+      <Course />
       <Playz>
         <h3>
           <span role='img' aria-label='play'>
@@ -60,13 +62,13 @@ const App = () => {
         </h3>
         <span>
           <span>
-            Let's play
+            Let's play to up skills
             <div>\</div>
           </span>
-          <img alt='kat' src='/img/kat.png' width='32px' height='auto' />
+          <img alt='kat' src='/img/fox.png' width='32px' height='auto' />
         </span>{' '}
         <span className='duck'>
-          <small>wow</small>
+          <small>wow!</small>
           <small>/</small>
           <img alt='duck' src='/img/duck.png' width='16px' height='auto' />
         </span>
@@ -80,13 +82,13 @@ const App = () => {
         </h3>
         <span>
           <span>
-            Let's enjoy!
+            Let's enjoy new skills
             <div>\</div>
           </span>
-          <img alt='kat' src='/img/kat.png' width='32px' height='auto' />
+          <img alt='kat' src='/img/foo.png' width='32px' height='auto' />
         </span>{' '}
         <span className='duck'>
-          <small>wow</small>
+          <small>wow!</small>
           <small>/</small>
           <img alt='duck' src='/img/duck.png' width='16px' height='auto' />
         </span>
