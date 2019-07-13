@@ -76,6 +76,27 @@ const Coursez = styled.span`
             margin: 2px 12px 0 0;
           }
         }
+
+        .action {
+          hr {
+            border: 1px solid white;
+            border-top: 1px solid lightgrey;
+          }
+
+          button {
+            height: 3em;
+            border-radius: 2em;
+            padding: 0.5em;
+            padding-left: 2em;
+            padding-right: 2em;
+            margin: 0.5em;
+            box-shadow: 0px 2px white, 0px -1px white;
+
+            :focus {
+              outline: 0;
+            }
+          }
+        }
       }
     }
   }
@@ -109,9 +130,18 @@ export default () => {
             </span>
             <div className='desc'>
               <div>
-                <img alt='python' src='/img/course/python.svg' /> Python with Kaggle
+                <img alt='python' src='/img/course/python.svg' /> Hello Python
               </div>
               <div>Public · Hosted by Noob Learning</div>
+            </div>
+            <div className='action'>
+              <hr />
+              <button>
+                <span role='img' aria-label='foxfox'>
+                  🦊
+                </span>{' '}
+                MORE DETAIL
+              </button>
             </div>
           </div>
         </Cardz>
