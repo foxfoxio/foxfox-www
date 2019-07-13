@@ -13,3 +13,26 @@
 
 - https://foxfox.io/score?id=quiz-sql-basic
 - https://foxfox.io/score?id=quiz-sql-advance
+
+## TODO - Learn
+
+- [ ] Learning path
+- [ ] Future event
+- [ ] Video micro course
+- [ ] Passed event
+- [ ] Learn list
+
+## TODO - Play
+
+- [ ] Playing path
+- [ ] Video micro quiz
+- [ ] Playlist
+- [ ] Favorite quiz
+
+## TODO - Enjoy
+
+- [ ] Testimonial
+- [ ] Certificate on Blockchain
+- [ ] User stats
+- [ ] User prediction
+- [ ] B2B Contact point
