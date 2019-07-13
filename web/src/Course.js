@@ -104,6 +104,21 @@ const Coursez = styled.span`
               outline: 0;
             }
           }
+
+          .map {
+            width: 330px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: auto;
+
+            a {
+              small {
+                color: grey;
+                line-height: 3em;
+              }
+            }
+          }
         }
       }
     }
@@ -132,7 +147,8 @@ const raws = [
     occurMonth: 'JUL',
     occurDate: '20',
     occurAt: 'Saturday, July 20, 2019 at 9 AM – 12:30 PM',
-    desc: 'Free - SQL for Data Science #3'
+    desc: 'Free - SQL for Data Science #3',
+    venue: 'BIG Co-Working 129 Rama IX Road, Huai Khwang, Bangkok, Thailand 10310'
   },
   {
     eventURL: 'https://www.facebook.com/events/695208040919202/',
@@ -141,7 +157,8 @@ const raws = [
     occurDate: '03',
     occurAt: 'Saturday, August 3, 2019 at 9 AM – 12:30 PM',
     icon: 'python',
-    desc: 'Python for Data Science'
+    desc: 'Python for Data Science',
+    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
   }
 ]
 
@@ -156,7 +173,9 @@ const MoreButtonz = ({ value }) => (
   </button>
 )
 
-const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, icon, desc }) => (
+const googleMap = venue => `https://www.google.com/maps?safe=off&q=` + encodeURI(venue)
+
+const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, icon, desc, venue }) => (
   <li className={className}>
     <div className='cover' />
     <div className='detail'>
@@ -172,6 +191,18 @@ const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, i
       </div>
       <div className='action'>
         <hr />
+        {venue && (
+          <div className='map'>
+            <a href={googleMap(venue)} target='_blank'>
+              <small>
+                <span role='img' aria-label='location'>
+                  📍
+                </span>{' '}
+                {venue}
+              </small>
+            </a>{' '}
+          </div>
+        )}
         <MoreButtonz value={eventURL} />
       </div>
     </div>
