@@ -41,7 +41,7 @@ const App = () => {
         </h3>
         <span>
           <span>
-            Let's learning by doing
+            Let's learn by doing
             <div>\</div>
           </span>
           <img alt='kat' src='/img/kat.png' width='32px' height='auto' />
@@ -103,43 +103,43 @@ const App = () => {
         <div>
           <div>
             <img width='auto' alt='katopz' src='/img/home/katopz.jpg' />
-            <span>KATOPZ</span>
-            <small>
+            <span>
               <span role='img' aria-label='Terms'>
                 👨🏻‍💻
               </span>
-              Full Stacks Developer
-            </small>
+              KATOPZ
+            </span>
+            <small>Full Stacks Developer</small>
           </div>
           <div>
             <img width='auto' alt='ying' src='/img/home/ying.jpg' />
-            <span>YING</span>
-            <small>
+            <span>
               <span role='img' aria-label='Terms'>
                 👩🏻‍🔬
               </span>
-              Data Scientist
-            </small>
+              YING
+            </span>
+            <small>Data Scientist</small>
           </div>
           <div>
             <img width='auto' alt='toy' src='/img/home/toy.jpg' />
-            <span>TOY</span>
-            <small>
+            <span>
               <span role='img' aria-label='Terms'>
                 👨🏻‍🔬
               </span>
-              Data Analyst
-            </small>
+              TOY
+            </span>
+            <small>Data Analyst</small>
           </div>
           <div>
             <img width='auto' alt='tay' src='/img/home/tay.jpg' />
-            <span>TAY</span>
-            <small>
+            <span>
               <span role='img' aria-label='Terms'>
                 👨🏻‍💻
               </span>
-              Blockchain Developer
-            </small>
+              TAY
+            </span>
+            <small>Blockchain Developer</small>
           </div>
         </div>
       </section>

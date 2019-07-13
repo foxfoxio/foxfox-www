@@ -10,6 +10,8 @@ const Coursez = styled.span`
     padding-inline-start: 0;
 
     li {
+      display: inline-block;
+      margin: 0.5em;
       border-radius: 8px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -18,8 +20,8 @@ const Coursez = styled.span`
         background-repeat: no-repeat;
         background-position: 50% 50%;
 
-        width: 320px;
-        height: 160px;
+        width: 400px;
+        height: 210px;
 
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -67,6 +69,11 @@ const Coursez = styled.span`
               font-weight: normal;
               line-height: 28px;
               margin-right: 12px;
+
+              width: 280px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
             }
 
             display: inline-block;
@@ -90,6 +97,7 @@ const Coursez = styled.span`
             padding-left: 2em;
             padding-right: 2em;
             margin: 0.5em;
+            background-color: white;
             box-shadow: 0px 2px white, 0px -1px white;
 
             :focus {
@@ -111,9 +119,68 @@ const Coursez = styled.span`
     height: 16px;
   }
 `
-const Cardz = styled.li`
+
+const icons = {
+  python: <img alt='python' src='/img/course/python.svg' />
+}
+
+const raws = [
+  {
+    eventURL: 'https://www.facebook.com/events/2285369731726296/',
+    coverURL:
+      'https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-9/65385449_2706839999329560_6010863209571942400_n.jpg?_nc_cat=102&_nc_eui2=AeE1U8IvIdvisHEPc-53Vg_Nrqe-P-Mae8GGzXezmChbs-jrFVTI8MmJqlHNsCi8qeah1gPu0dJvcDe5keWFEamv7RzVcZ5_Wz1cRf_9eJIQYw&_nc_oc=AQkZ-vYY7ypzzeZIje-Cjh8DRNFHusvh7DyXkcylh9OUY-mwzOZIg1p4WmzDZcnDrzYt7FxsEWPxv76SE23mxiEi&_nc_ht=scontent.fbkk5-6.fna&oh=313362ea55dbee49d0e4d9f286dd8677&oe=5DB85352',
+    occurMonth: 'JUL',
+    occurDate: '20',
+    occurAt: 'Saturday, July 20, 2019 at 9 AM – 12:30 PM',
+    desc: 'Free - SQL for Data Science #3'
+  },
+  {
+    eventURL: 'https://www.facebook.com/events/695208040919202/',
+    coverURL: '/img/course/2019-07-03-cover-ying-python.jpg',
+    occurMonth: 'AUG',
+    occurDate: '03',
+    occurAt: 'Saturday, August 3, 2019 at 9 AM – 12:30 PM',
+    icon: 'python',
+    desc: 'Python for Data Science'
+  }
+]
+
+const onMoreButtonClick = e => window.open(e.target.value, '_blank')
+
+const MoreButtonz = ({ value }) => (
+  <button onClick={onMoreButtonClick} value={value}>
+    <span role='img' aria-label='foxfox'>
+      🦊
+    </span>{' '}
+    MORE DETAIL
+  </button>
+)
+
+const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, icon, desc }) => (
+  <li className={className}>
+    <div className='cover' />
+    <div className='detail'>
+      <span className='date'>
+        <span>{occurMonth}</span>
+        <span>{occurDate}</span>
+      </span>
+      <div className='desc'>
+        <div>
+          {icon && icons[icon]} {desc}
+        </div>
+        <div>{occurAt}</div>
+      </div>
+      <div className='action'>
+        <hr />
+        <MoreButtonz value={eventURL} />
+      </div>
+    </div>
+  </li>
+)
+
+const Cardz = styled(Card)`
   .cover {
-    background-image: ${({ src }) => `url('${src}')`};
+    background-image: ${({ coverURL }) => `url('${coverURL}')`};
   }
 `
 
@@ -121,30 +188,8 @@ export default () => {
   return (
     <Coursez>
       <ul>
-        <Cardz src='/img/course/2019-07-03-cover-ying-python.jpg'>
-          <div className='cover' />
-          <div className='detail'>
-            <span className='date'>
-              <span>AUG</span>
-              <span>03</span>
-            </span>
-            <div className='desc'>
-              <div>
-                <img alt='python' src='/img/course/python.svg' /> Hello Python
-              </div>
-              <div>Public · Hosted by Noob Learning</div>
-            </div>
-            <div className='action'>
-              <hr />
-              <button>
-                <span role='img' aria-label='foxfox'>
-                  🦊
-                </span>{' '}
-                MORE DETAIL
-              </button>
-            </div>
-          </div>
-        </Cardz>
+        <Cardz {...raws[0]} />
+        <Cardz {...raws[1]} />
       </ul>
     </Coursez>
   )
