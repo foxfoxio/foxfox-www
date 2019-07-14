@@ -150,6 +150,7 @@ export const Appz = styled.div`
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    padding-inline-start: 0;
   }
 
   .navigation a {
