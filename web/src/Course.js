@@ -193,7 +193,7 @@ const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, i
         <hr />
         {venue && (
           <div className='map'>
-            <a href={googleMap(venue)} target='_blank'>
+            <a href={googleMap(venue)} target='_blank' rel='noopener noreferrer'>
               <small>
                 <span role='img' aria-label='location'>
                   📍
