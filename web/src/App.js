@@ -9,7 +9,7 @@ const App = () => {
       <header className="header">
         <div className="header-left">
           <img className="logo" alt="FoxFox Logo" src="/img/foxfox-logo-white.svg" />
-          <img className="logo-text" alt="FoxFox Text Logo" src="/img/foxfox-text-densed-white.svg" />
+          <img className="logo-text" alt="FoxFox Text Logo" src="/img/foxfox-text-dense-white.svg" />
         </div>
         <div className="header-right">
           <ul className="navigation">
