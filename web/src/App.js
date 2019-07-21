@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import { Appz, Heroz, Learnz, Playz, Enjoyz } from "./App.css";
-import Course from "./Course";
+import { Appz, Heroz, Learnz, Playz, Enjoyz } from './App.css'
+import Course from './Course'
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
       <Heroz>
         <div className="title">
           <div>
-            <span>Learning is </span>{" "}
+            <span>Learning is </span>{' '}
             <span className="fun">
               <img alt="fun" src="/img/fun.svg" />
             </span>
@@ -42,7 +42,7 @@ const App = () => {
         <h3>
           <span role="img" aria-label="learn">
             🧪
-          </span>{" "}
+          </span>{' '}
           LEARN
         </h3>
         <span>
@@ -51,7 +51,7 @@ const App = () => {
             <div>\</div>
           </span>
           <img alt="kat" src="/img/kat.png" width="32px" height="auto" />
-        </span>{" "}
+        </span>{' '}
         <span className="duck">
           <small>wow!</small>
           <small>/</small>
@@ -63,7 +63,7 @@ const App = () => {
         <h3>
           <span role="img" aria-label="play">
             💎
-          </span>{" "}
+          </span>{' '}
           PLAY
         </h3>
         <span>
@@ -72,7 +72,7 @@ const App = () => {
             <div>\</div>
           </span>
           <img alt="kat" src="/img/fox.png" width="32px" height="auto" />
-        </span>{" "}
+        </span>{' '}
         <span className="duck">
           <small>wow!</small>
           <small>/</small>
@@ -83,7 +83,7 @@ const App = () => {
         <h3>
           <span role="img" aria-label="enjoy">
             🏂
-          </span>{" "}
+          </span>{' '}
           ENJOY
         </h3>
         <span>
@@ -92,7 +92,7 @@ const App = () => {
             <div>\</div>
           </span>
           <img alt="kat" src="/img/foo.png" width="32px" height="auto" />
-        </span>{" "}
+        </span>{' '}
         <span className="duck">
           <small>wow!</small>
           <small>/</small>
@@ -103,7 +103,7 @@ const App = () => {
         <h3>
           <span role="img" aria-label="Terms">
             🦊
-          </span>{" "}
+          </span>{' '}
           TEAM
         </h3>
         <div>
@@ -153,7 +153,7 @@ const App = () => {
         <h3>
           <span role="img" aria-label="Terms">
             👍🏻
-          </span>{" "}
+          </span>{' '}
           TRUSTED BY
         </h3>
         <div>
@@ -194,7 +194,7 @@ const App = () => {
         </small>
       </footer>
     </Appz>
-  );
-};
+  )
+}
 
-export default App;
+export default App

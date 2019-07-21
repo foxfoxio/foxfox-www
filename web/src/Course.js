@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Coursez = styled.span`
   display: flex;
@@ -133,48 +133,48 @@ const Coursez = styled.span`
     width: auto;
     height: 16px;
   }
-`;
+`
 
 const icons = {
-  python: <img alt="python" src="/img/course/python.svg" />,
-};
+  python: <img alt="python" src="/img/course/python.svg" />
+}
 
 const raws = [
   {
-    eventURL: "https://www.facebook.com/events/2285369731726296/",
+    eventURL: 'https://www.facebook.com/events/2070199543287309/',
     coverURL:
-      "https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-9/65385449_2706839999329560_6010863209571942400_n.jpg?_nc_cat=102&_nc_eui2=AeE1U8IvIdvisHEPc-53Vg_Nrqe-P-Mae8GGzXezmChbs-jrFVTI8MmJqlHNsCi8qeah1gPu0dJvcDe5keWFEamv7RzVcZ5_Wz1cRf_9eJIQYw&_nc_oc=AQkZ-vYY7ypzzeZIje-Cjh8DRNFHusvh7DyXkcylh9OUY-mwzOZIg1p4WmzDZcnDrzYt7FxsEWPxv76SE23mxiEi&_nc_ht=scontent.fbkk5-6.fna&oh=313362ea55dbee49d0e4d9f286dd8677&oe=5DB85352",
-    occurMonth: "JUL",
-    occurDate: "20",
-    occurAt: "Saturday, July 20, 2019 at 9 AM – 12:30 PM",
-    desc: "Free - SQL for Data Science #3",
-    venue: "BIG Co-Working 129 Rama IX Road, Huai Khwang, Bangkok, Thailand 10310",
+      'https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/66753948_2739338309413062_7001306054126469120_n.jpg?_nc_cat=108&_nc_eui2=AeGJEJEot9X2ejtn6iVYthuwZzeTlnrCc2iWrM19OssWpkQawZcvXjpaExjXhsO4Mra74HXV0hIsfhxlbMfATfUBVuHWSgxLJYbdvYtwoY3b0w&_nc_oc=AQl-i1ZFLs6acBzQn4wFaXKopFNSVpUlWHJ9DejZT23Vpe1tH0GLHKrWdou-tsh9zfg&_nc_ht=scontent.fbkk22-1.fna&oh=65a955d705c93553028e131a3a0456e2&oe=5DB8A79B',
+    occurMonth: 'JUL',
+    occurDate: '27',
+    occurAt: 'Saturday, July 27, 2019 at 9 AM – 5:30 PM',
+    desc: 'เรียนรัว R, SQL, Machine Learning ครั้งที่ 03/2019',
+    venue: 'BIG Co-Working 129 Rama IX Road, Huai Khwang, Bangkok, Thailand 10310'
   },
   {
-    eventURL: "https://web.facebook.com/events/912670962412399/",
+    eventURL: 'https://web.facebook.com/events/912670962412399/',
     coverURL:
-      "https://scontent.fbkk2-8.fna.fbcdn.net/v/t1.0-9/67499388_1078320562363655_2647091548293955584_o.jpg?_nc_cat=102&_nc_eui2=AeFvS0DjN-0dk2TpLpH6EOprcO-5tQhNBkOrFinDAtPsvQH0D5kE3zUI8llLKCcKDpNwVZ1fvDOANqoZq44hzInKRb5WyxTkCF6WkLCtnZ6BfA&_nc_oc=AQkXY9cScrTtUj2SWhZx3Sih8LGZTV9RLFY7nBVZJ6BHAJQr_ILTd7TbnR-znxf-kPE&_nc_ht=scontent.fbkk2-8.fna&oh=dc839e56fc4222eb3373cd25d90ed4ef&oe=5DA0F7C1",
-    occurMonth: "AUG",
-    occurDate: "03",
-    occurAt: "Saturday, August 3, 2019 at 13 PM – 16 PM",
-    icon: "python",
-    desc: "Python for Data Science",
-    venue: "Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok",
-  },
-];
+      'https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.0-9/67323199_1081587398703638_5857041958047842304_o.jpg?_nc_cat=109&_nc_eui2=AeH4Mzr_A13kOZHwP4ypcbgZeUhwSF9BVsobJGUYTiTom59YO00A-xgYcehAE6zlM3zowaq14FYM8tGVXri---6wG10IJyLaghbrqawgTCQ7Sw&_nc_oc=AQlScJlctq5MPwaGjUXjxHFGaGdgjzjOa_HHhfWfo5IlWb_Na18fmxnRvyGEmtbxjD8&_nc_ht=scontent.fbkk22-2.fna&oh=f831d13cc61af1ac98c5694a0806b6ab&oe=5DAE4E4B',
+    occurMonth: 'AUG',
+    occurDate: '03',
+    occurAt: 'Saturday, August 3, 2019 at 13 PM – 16 PM',
+    icon: 'python',
+    desc: 'Python for Data Science',
+    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
+  }
+]
 
-const onMoreButtonClick = e => window.open(e.target.value, "_blank");
+const onMoreButtonClick = e => window.open(e.target.value, '_blank')
 
 const MoreButtonz = ({ value }) => (
   <button onClick={onMoreButtonClick} value={value}>
     <span role="img" aria-label="foxfox">
       🦊
-    </span>{" "}
+    </span>{' '}
     MORE DETAIL
   </button>
-);
+)
 
-const googleMap = venue => `https://www.google.com/maps?safe=off&q=` + encodeURI(venue);
+const googleMap = venue => `https://www.google.com/maps?safe=off&q=` + encodeURI(venue)
 
 const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, icon, desc, venue }) => (
   <li className={className}>
@@ -198,23 +198,23 @@ const Card = ({ className, eventURL, occurMonth, occurDate, coverURL, occurAt, i
               <small>
                 <span role="img" aria-label="location">
                   📍
-                </span>{" "}
+                </span>{' '}
                 {venue}
               </small>
-            </a>{" "}
+            </a>{' '}
           </div>
         )}
         <MoreButtonz value={eventURL} />
       </div>
     </div>
   </li>
-);
+)
 
 const Cardz = styled(Card)`
   .cover {
     background-image: ${({ coverURL }) => `url('${coverURL}')`};
   }
-`;
+`
 
 export default () => {
   return (
@@ -224,5 +224,5 @@ export default () => {
         <Cardz {...raws[1]} />
       </ul>
     </Coursez>
-  );
-};
+  )
+}
