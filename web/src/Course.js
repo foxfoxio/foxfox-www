@@ -153,7 +153,7 @@ const raws = [
   {
     eventURL: 'https://web.facebook.com/events/912670962412399/',
     coverURL:
-      'https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.0-9/67323199_1081587398703638_5857041958047842304_o.jpg?_nc_cat=109&_nc_eui2=AeH4Mzr_A13kOZHwP4ypcbgZeUhwSF9BVsobJGUYTiTom59YO00A-xgYcehAE6zlM3zowaq14FYM8tGVXri---6wG10IJyLaghbrqawgTCQ7Sw&_nc_oc=AQlScJlctq5MPwaGjUXjxHFGaGdgjzjOa_HHhfWfo5IlWb_Na18fmxnRvyGEmtbxjD8&_nc_ht=scontent.fbkk22-2.fna&oh=f831d13cc61af1ac98c5694a0806b6ab&oe=5DAE4E4B',
+      'https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/67542696_1081657002030011_5451014720754548736_o.jpg?_nc_cat=104&_nc_eui2=AeEDDdAzi6T4Ds6NXO_3ibS5O9U4Xhp3aTac-4eTeAKwRxYgFSfa6nhc9LUEzjR41HzmmZUnvc29KifyQpzkiCVFWavA4l0sP5ie7W5t6TRhGQ&_nc_oc=AQnxvQOme-KI5gD0doQoeco5uw61rGmnMImghQKnf8PtzrnkVqcPxwY9WxnNfZPFm-s&_nc_ht=scontent.fbkk22-1.fna&oh=d3437db9676b78297ec4a1c28a105e8e&oe=5DAEFF0D',
     occurMonth: 'AUG',
     occurDate: '03',
     occurAt: 'Saturday, August 3, 2019 at 13 PM – 16 PM',
