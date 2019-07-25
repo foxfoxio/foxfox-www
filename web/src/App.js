@@ -20,9 +20,9 @@ const App = () => {
             <li>
               <a href="#play">Play</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#enjoy">Enjoy</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </header>
@@ -81,7 +81,7 @@ const App = () => {
         </span>
       </Playz>
       <Quest />
-      <Enjoyz>
+      {/*<Enjoyz>
         <h3>
           <span role="img" aria-label="enjoy">
             🏂
@@ -100,7 +100,7 @@ const App = () => {
           <small>/</small>
           <img alt="duck" src="/img/duck.png" width="16px" height="auto" />
         </span>
-      </Enjoyz>
+      </Enjoyz> */}
       <section className="team">
         <h3>
           <span role="img" aria-label="Terms">
