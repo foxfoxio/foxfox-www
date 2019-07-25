@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Appz, Heroz, Learnz, Playz, Enjoyz } from './App.css'
+import { Appz, Heroz, Learnz, Playz /*, Enjoyz*/ } from './App.css'
 import Course from './Course'
 import Quest from './Quest'
 
