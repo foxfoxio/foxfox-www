@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Appz, Heroz, Learnz, Playz, Enjoyz } from './App.css'
 import Course from './Course'
+import Quest from './Quest'
 
 const App = () => {
   return (
@@ -79,6 +80,7 @@ const App = () => {
           <img alt="duck" src="/img/duck.png" width="16px" height="auto" />
         </span>
       </Playz>
+      <Quest />
       <Enjoyz>
         <h3>
           <span role="img" aria-label="enjoy">
