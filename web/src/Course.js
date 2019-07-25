@@ -221,7 +221,9 @@ export default () => {
     <Coursez>
       <ul>
         <Cardz {...raws[0]} />
+        {/*
         <Cardz {...raws[1]} />
+        */}
       </ul>
     </Coursez>
   )
