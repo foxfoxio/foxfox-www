@@ -56,6 +56,7 @@ const Questz = styled.span`
             margin: 0.5em;
             background-color: white;
             box-shadow: 0px 2px white, 0px -1px white;
+            cursor: pointer;
 
             :focus {
               outline: 0;
