@@ -83,13 +83,13 @@ const icons = {
 
 const raws = [
   {
-    questURL: 'https://foxfox.io/quiz?id=sql/basic',
+    questURL: 'https://play.foxfox.io/quiz?id=sql/basic',
     coverURL: 'img/quest/sql-basic.png',
     desc: 'Basic SQL',
     color: 'darkseagreen'
   },
   {
-    questURL: 'https://foxfox.io/quiz?id=sql/advance',
+    questURL: 'https://play.foxfox.io/quiz?id=sql/advance',
     coverURL: 'img/quest/sql-advance.png',
     desc: 'Advance SQL',
     color: 'lightcoral'

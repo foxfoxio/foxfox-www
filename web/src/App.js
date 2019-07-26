@@ -173,7 +173,7 @@ const App = () => {
             info<span>@</span>foxfox.io
           </small>
         </a>
-        <a href="/policy">
+        <a href="/policy.html">
           <small>
             <span role="img" aria-label="Terms">
               🔏
@@ -181,7 +181,7 @@ const App = () => {
             Privacy Policy
           </small>
         </a>
-        <a href="/terms">
+        <a href="/terms.html">
           <small>
             <span role="img" aria-label="Terms">
               📝

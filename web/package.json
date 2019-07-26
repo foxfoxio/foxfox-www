@@ -13,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "rm -rf ../firebase/public && cp -R ./build ../firebase/public && cd ../firebase && firebase deploy --only hosting",
+    "release": "npm run build && npm run deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
