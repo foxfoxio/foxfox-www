@@ -4,6 +4,8 @@ import styled from 'styled-components'
 const Coursez = styled.span`
   display: flex;
   justify-content: center;
+  width: 100%;
+  overflow: hidden;
 
   ul {
     list-style: none;
@@ -20,7 +22,7 @@ const Coursez = styled.span`
         background-repeat: no-repeat;
         background-position: 50% 50%;
 
-        width: 400px;
+        width: auto;
         height: 210px;
 
         border-top-left-radius: 8px;
@@ -39,7 +41,7 @@ const Coursez = styled.span`
           -webkit-font-smoothing: antialiased;
           margin-top: -2px;
           padding-bottom: 0;
-          width: 64px;
+          width: 60px;
 
           span {
             display: block;
@@ -70,7 +72,7 @@ const Coursez = styled.span`
               line-height: 28px;
               margin-right: 12px;
 
-              width: 280px;
+              width: 260px;
               white-space: nowrap;
               text-overflow: ellipsis;
               overflow: hidden;
@@ -99,7 +101,10 @@ const Coursez = styled.span`
             margin: 0.5em;
             background-color: white;
             box-shadow: 0px 2px white, 0px -1px white;
+
             cursor: pointer;
+            user-select: none;
+            -webkit-touch-callout: none;
 
             :focus {
               outline: 0;
@@ -107,7 +112,7 @@ const Coursez = styled.span`
           }
 
           .map {
-            width: 330px;
+            width: 100%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -222,9 +227,8 @@ export default () => {
     <Coursez>
       <ul>
         <Cardz {...raws[0]} />
-        {/*
+
         <Cardz {...raws[1]} />
-        */}
       </ul>
     </Coursez>
   )

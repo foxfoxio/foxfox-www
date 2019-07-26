@@ -56,7 +56,10 @@ const Questz = styled.span`
             margin: 0.5em;
             background-color: white;
             box-shadow: 0px 2px white, 0px -1px white;
+
             cursor: pointer;
+            user-select: none;
+            -webkit-touch-callout: none;
 
             :focus {
               outline: 0;
