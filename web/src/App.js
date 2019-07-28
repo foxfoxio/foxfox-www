@@ -117,7 +117,7 @@ const App = () => {
               </span>
               KATOPZ
             </span>
-            <small>Full Stacks Developer</small>
+            <small>Fullstack Dev</small>
           </div>
           <div>
             <img width="auto" alt="ying" src="/img/home/ying.jpg" />
@@ -147,7 +147,7 @@ const App = () => {
               </span>
               TAY
             </span>
-            <small>Blockchain Developer</small>
+            <small>Blockchain Dev</small>
           </div>
         </div>
       </section>
