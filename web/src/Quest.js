@@ -88,19 +88,19 @@ const icons = {
 const raws = [
   {
     questURL: 'https://play.foxfox.io/quiz?id=sql/basic',
-    coverURL: 'img/quest/sql-basic.png',
+    coverURL: '/img/quest/sql-basic.png',
     desc: 'Basic SQL',
     color: 'darkseagreen'
   },
   {
     questURL: 'https://play.foxfox.io/quiz?id=sql/advance',
-    coverURL: 'img/quest/sql-advance.png',
+    coverURL: '/img/quest/sql-advance.png',
     desc: 'Advance SQL',
     color: 'lightcoral'
   } /*,
   {
     questURL: 'https://foxfox.io/quiz?id=sql/interview',
-    coverURL: 'img/quest/sql.png',
+    coverURL: '/img/quest/sql.png',
     desc: 'Interview SQL',
     color: 'cornflowerblue'
   }*/

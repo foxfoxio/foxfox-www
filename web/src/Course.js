@@ -23,7 +23,7 @@ const Coursez = styled.span`
         background-position: 50% 50%;
 
         width: auto;
-        height: 210px;
+        height: 190px;
 
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -147,24 +147,14 @@ const icons = {
 
 const raws = [
   {
-    eventURL: 'https://www.facebook.com/events/2070199543287309/',
+    eventURL: 'https://www.facebook.com/events/510948563005126/',
     coverURL:
-      'https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/66753948_2739338309413062_7001306054126469120_n.jpg?_nc_cat=108&_nc_eui2=AeGJEJEot9X2ejtn6iVYthuwZzeTlnrCc2iWrM19OssWpkQawZcvXjpaExjXhsO4Mra74HXV0hIsfhxlbMfATfUBVuHWSgxLJYbdvYtwoY3b0w&_nc_oc=AQl-i1ZFLs6acBzQn4wFaXKopFNSVpUlWHJ9DejZT23Vpe1tH0GLHKrWdou-tsh9zfg&_nc_ht=scontent.fbkk22-1.fna&oh=65a955d705c93553028e131a3a0456e2&oe=5DB8A79B',
-    occurMonth: 'JUL',
-    occurDate: '27',
-    occurAt: 'Saturday, July 27, 2019 at 9 AM – 5:30 PM',
-    desc: 'เรียนรัว R, SQL, Machine Learning ครั้งที่ 03/2019',
-    venue: 'BIG Co-Working 129 Rama IX Road, Huai Khwang, Bangkok, Thailand 10310'
-  },
-  {
-    eventURL: 'https://web.facebook.com/events/912670962412399/',
-    coverURL:
-      'https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/67542696_1081657002030011_5451014720754548736_o.jpg?_nc_cat=104&_nc_eui2=AeEDDdAzi6T4Ds6NXO_3ibS5O9U4Xhp3aTac-4eTeAKwRxYgFSfa6nhc9LUEzjR41HzmmZUnvc29KifyQpzkiCVFWavA4l0sP5ie7W5t6TRhGQ&_nc_oc=AQnxvQOme-KI5gD0doQoeco5uw61rGmnMImghQKnf8PtzrnkVqcPxwY9WxnNfZPFm-s&_nc_ht=scontent.fbkk22-1.fna&oh=d3437db9676b78297ec4a1c28a105e8e&oe=5DAEFF0D',
+      'https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.0-9/67872994_349042122675692_6626106704809426944_o.jpg?_nc_cat=107&_nc_eui2=AeG_PTwc0d7fa-2rWsoSZcWiHBHOG9d58ve1XeInLKI7SzL_r7dWsiFRr80xwtQMLpuYVojHrAYQKnB_ujJJ7MmFJZEG9C4GLRFJ2iv9H4nwqQ&_nc_oc=AQm8Cxvb3wbBJpQuAnctLuRrN3t67ll4y_pZAZRiEiRt8mcLm_pUBHf6N9z3MBICfx8&_nc_ht=scontent.fbkk5-7.fna&oh=50606f64135f9481dbc7486555219710&oe=5DED1EFE',
     occurMonth: 'AUG',
     occurDate: '03',
     occurAt: 'Saturday, August 3, 2019 at 13 PM – 16 PM',
     icon: 'python',
-    desc: 'Python for Data Science',
+    desc: 'Basic Python for Everyone with Kaggle',
     venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
   }
 ]
@@ -227,8 +217,6 @@ export default () => {
     <Coursez>
       <ul>
         <Cardz {...raws[0]} />
-
-        <Cardz {...raws[1]} />
       </ul>
     </Coursez>
   )
