@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const font_family =
-  "LL Circular Pro Medium Web, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif";
+  'LL Circular Pro Medium Web, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif'
 
 export const Heroz = styled.section`
     display: flex;
@@ -48,7 +48,7 @@ export const Heroz = styled.section`
       }
     }
 
-`;
+`
 export const Learnz = styled.section`
   span {
     span:first-child {
@@ -67,7 +67,7 @@ export const Learnz = styled.section`
       display: block;
     }
   }
-`;
+`
 
 export const Playz = styled.section`
   span {
@@ -87,7 +87,7 @@ export const Playz = styled.section`
       display: block;
     }
   }
-`;
+`
 
 export const Enjoyz = styled.section`
   span {
@@ -107,7 +107,7 @@ export const Enjoyz = styled.section`
       display: block;
     }
   }
-`;
+`
 
 export const Appz = styled.div`
   display: flex;
@@ -218,7 +218,8 @@ export const Appz = styled.div`
         border-color: powderblue;
         border-width: thick;
         border-style: solid;
-        margin: 0.5em;
+        margin: 0em;
+        margin-bottom: 0.5em;
 
         @media only screen and (min-width: 768px) {
           height: 6em;
@@ -271,7 +272,7 @@ export const Appz = styled.div`
     justify-content: center;
     align-items: center;
     background: lightskyblue;
-    background-image: url("/img/4dot.png");
+    background-image: url('/img/4dot.png');
     height: 2em;
 
     small {
@@ -285,10 +286,10 @@ export const Appz = styled.div`
     display: flex;
     justify-content: space-around;
     background: deepskyblue;
-    background-image: url("/img/4dot.png");
+    background-image: url('/img/4dot.png');
 
     span {
       color: coral;
     }
   }
-`;
+`
