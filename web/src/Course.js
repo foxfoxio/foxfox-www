@@ -95,12 +95,15 @@ const Coursez = styled.span`
           button {
             height: 3em;
             border-radius: 2em;
+            border-color: sandybrown;
             padding: 0.5em;
             padding-left: 2em;
             padding-right: 2em;
             margin: 0.5em;
-            background-color: white;
+            background-color: linen;
             box-shadow: 0px 2px white, 0px -1px white;
+            font-weight: bold;
+            color: crimson;
 
             cursor: pointer;
             user-select: none;
@@ -137,7 +140,7 @@ const Coursez = styled.span`
 
   img {
     width: auto;
-    height: 16px;
+    height: 14px;
   }
 `
 
