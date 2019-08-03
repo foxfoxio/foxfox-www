@@ -1,0 +1,29 @@
+{
+  "line": {
+    "type": "template",
+    "altText": "ลองเล่นในมือถือน้า",
+    "template": {
+      "type": "carousel",
+      "actions": [],
+      "columns": [
+        {
+          "thumbnailImageUrl": "https://foxfox.io/img/quest/python-basic.png",
+          "title": "Basic Python",
+          "text": "Saturday, August 3, 2019 at 13PM – 16PM",
+          "actions": [
+            {
+              "type": "uri",
+              "label": "Learn",
+              "uri": "https://www.facebook.com/events/510948563005126/"
+            },
+            {
+              "type": "uri",
+              "label": "Play",
+              "uri": "line://app/1572417560-M2dWWN42?id=python/basic"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

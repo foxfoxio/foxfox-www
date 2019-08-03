@@ -90,6 +90,12 @@ const icons = {
 
 const raws = [
   {
+    questURL: 'https://play.foxfox.io/quiz?id=python/basic',
+    coverURL: '/img/quest/python-basic.png',
+    desc: 'Basic Python',
+    color: 'darkseagreen'
+  },
+  {
     questURL: 'https://play.foxfox.io/quiz?id=sql/basic',
     coverURL: '/img/quest/sql-basic.png',
     desc: 'Basic SQL',
