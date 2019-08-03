@@ -152,12 +152,23 @@ const raws = [
   {
     eventURL: 'https://www.facebook.com/events/510948563005126/',
     coverURL:
-      'https://scontent.fbkk5-5.fna.fbcdn.net/v/t1.0-9/67347292_349467542633150_6418725613376372736_o.jpg?_nc_cat=100&_nc_eui2=AeFYVgBUIAMfQ4EZFcb1pnKmn9d9KEOJibUaxCoWm55R5zknEOq-WgkZZ8faEJAoJfcq8AYWw_2wH_qcry4ky_sSczRMAjU5QQ7blMsf3ux-6A&_nc_oc=AQlO4ce_b4xsSftbsFw_AgMAV731c596zb-L0AUj0Lo1r9nwWFfzInJk6qzOmlmjm28&_nc_ht=scontent.fbkk5-5.fna&oh=2ed7c90aa3f40d02c5d0b29f3913187b&oe=5DB1150C',
+      'https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.0-9/67470241_350246959221875_9037777656656953344_n.jpg?_nc_cat=106&_nc_oc=AQkoCMm20CnKOo2ofWAlTVpME_KFF1hwiFNuGO2WFnheysxDBMnCTfU6tKuSKdfGorU&_nc_ht=scontent.fbkk22-2.fna&oh=5d866ccc7654a93d4605ce8d3cf0d487&oe=5DAE9D1C',
     occurMonth: 'AUG',
     occurDate: '03',
     occurAt: 'Saturday, August 3, 2019 at 13 PM – 16 PM',
     icon: 'python',
-    desc: 'Basic Python for Everyone with Kaggle',
+    desc: 'Basic Python for Everyone with Kaggle #1',
+    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
+  },
+  {
+    eventURL: 'https://www.facebook.com/events/822965434771109/',
+    coverURL:
+      'https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/67912781_350244612555443_7748879729431674880_n.jpg?_nc_cat=104&_nc_oc=AQnE5Ms29SijFuOwFqOdHVzU7UklHqrb0ooE2CWoeOgV-o0WMxeMgBr55GYIvwNy5ME&_nc_ht=scontent.fbkk22-1.fna&oh=f76049adae018cab643a00d0fadac208&oe=5DA30309',
+    occurMonth: 'AUG',
+    occurDate: '04',
+    occurAt: 'Saturday, August 4, 2019 at 13 PM – 16 PM',
+    icon: 'python',
+    desc: 'Basic Python for Everyone with Kaggle #2',
     venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
   }
 ]
@@ -219,7 +230,9 @@ export default () => {
   return (
     <Coursez>
       <ul>
-        <Cardz {...raws[0]} />
+        {raws.map(e => (
+          <Cardz {...e} />
+        ))}
       </ul>
     </Coursez>
   )
