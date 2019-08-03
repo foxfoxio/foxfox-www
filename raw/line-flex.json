@@ -13,13 +13,32 @@
           "actions": [
             {
               "type": "uri",
-              "label": "Learn",
-              "uri": "https://www.facebook.com/events/510948563005126/"
-            },
+              "label": "PLAY",
+              "uri": "line://app/1572417560-M2dWWN42?id=python/basic"
+            }
+          ]
+        },
+        {
+          "thumbnailImageUrl": "https://foxfox.io/img/quest/sql-basic.png",
+          "title": "Basic SQL",
+          "text": "Sunday, August 4, 2019",
+          "actions": [
             {
               "type": "uri",
-              "label": "Play",
-              "uri": "line://app/1572417560-M2dWWN42?id=python/basic"
+              "label": "PLAY",
+              "uri": "line://app/1572417560-M2dWWN42?id=sql/basic"
+            }
+          ]
+        },
+        {
+          "thumbnailImageUrl": "https://foxfox.io/img/quest/sql-advance.png",
+          "title": "Advance SQL",
+          "text": "Sunday, August 4, 2019",
+          "actions": [
+            {
+              "type": "uri",
+              "label": "PLAY",
+              "uri": "line://app/1572417560-M2dWWN42?id=sql/advance"
             }
           ]
         }
