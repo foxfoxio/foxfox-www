@@ -250,9 +250,9 @@ export const Appz = styled.div`
 
     div {
       display: flex;
-      justify-content: space-evenly;
-      max-width: 40em;
+      justify-content: center;
       margin: auto;
+      flex-wrap: wrap;
 
       img {
         padding-top: 0;

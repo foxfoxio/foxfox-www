@@ -162,6 +162,7 @@ const App = () => {
           <img alt="Disrupt Technology Venture" src="/img/disrupt-logo.svg" />
           <img alt="Stormbreaker Venture" src="/img/stormbreaker-logo.svg" />
           <img alt="สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)" src="/img/depa-logo.png" />
+          <img alt="Google Cloud for Startups" src="/img/google-startups-logo.png" />
         </div>
       </section>
       <section className="leg">
