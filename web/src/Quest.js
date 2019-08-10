@@ -40,6 +40,7 @@ const Questz = styled.span`
           display: inline-block;
           text-align: center;
           margin-bottom: 0.25em;
+          font-size: 20px;
         }
 
         .action {
@@ -99,6 +100,7 @@ const raws = [
     questURL: 'https://play.foxfox.io/quiz?id=python/basic',
     scoreURL: 'https://play.foxfox.io/score?id=quiz-python-basic',
     coverURL: '/img/quest/python-basic.png',
+    icon: 'python',
     desc: 'Basic Python',
     color: 'darkseagreen'
   },
