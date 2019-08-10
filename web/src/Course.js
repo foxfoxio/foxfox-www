@@ -230,8 +230,8 @@ export default () => {
   return (
     <Coursez>
       <ul>
-        {raws.map(e => (
-          <Cardz {...e} />
+        {raws.map((e, i) => (
+          <Cardz key={i} {...e} />
         ))}
       </ul>
     </Coursez>
