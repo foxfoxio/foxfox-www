@@ -170,6 +170,17 @@ const raws = [
     icon: 'python',
     desc: 'Basic Python for Everyone with Kaggle #2',
     venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
+  },
+  {
+    eventURL: 'https://web.facebook.com/events/377132853183962/',
+    coverURL:
+      'https://scontent.fbkk2-7.fna.fbcdn.net/v/t1.0-9/67362259_351288142451090_8551655141923618816_o.jpg?_nc_cat=108&_nc_eui2=AeEYqPbspJjwPCHo86d9obsnvVZ3QluoLc_Z87vhCFmb2eVn-q0o_37Cm48UswHpSpwf35l7LvYIJjDPdHdKW_b6CjucD5JkAMBdq5QH7iRkDw&_nc_oc=AQnYkFGzb9SgMtxlGd77OLu_gAL2P4h0mG1nw6WO1ZNDEIeCwwckZWmHyajxZKXA4Fs&_nc_ht=scontent.fbkk2-7.fna&oh=ff6693cdaf6085481968d7ffed4bd4a8&oe=5DD4A328',
+    occurMonth: 'AUG',
+    occurDate: '04',
+    occurAt: 'Saturday, August 4, 2019 at 9 AM – 12 PM',
+    icon: 'python',
+    desc: 'Basic Python for Everyone with Kaggle #3',
+    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
   }
 ]
 
