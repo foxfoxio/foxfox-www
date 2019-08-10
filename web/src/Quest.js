@@ -39,6 +39,7 @@ const Questz = styled.span`
         .desc {
           display: inline-block;
           text-align: center;
+          margin-bottom: 0.25em;
         }
 
         .action {
@@ -48,6 +49,7 @@ const Questz = styled.span`
           }
 
           button {
+            width: 128px;
             height: 3em;
             border-radius: 2em;
             border-color: sandybrown;
@@ -67,6 +69,10 @@ const Questz = styled.span`
             :focus {
               outline: 0;
             }
+          }
+
+          br + button {
+            margin-top: 0;
           }
         }
       }
@@ -91,18 +97,21 @@ const icons = {
 const raws = [
   {
     questURL: 'https://play.foxfox.io/quiz?id=python/basic',
+    scoreURL: 'https://play.foxfox.io/score?id=quiz-python-basic',
     coverURL: '/img/quest/python-basic.png',
     desc: 'Basic Python',
     color: 'darkseagreen'
   },
   {
     questURL: 'https://play.foxfox.io/quiz?id=sql/basic',
+    scoreURL: 'https://play.foxfox.io/score?id=quiz-sql-basic',
     coverURL: '/img/quest/sql-basic.png',
     desc: 'Basic SQL',
     color: 'darkseagreen'
   },
   {
     questURL: 'https://play.foxfox.io/quiz?id=sql/advance',
+    scoreURL: 'https://play.foxfox.io/score?id=quiz-sql-advance',
     coverURL: '/img/quest/sql-advance.png',
     desc: 'Advance SQL',
     color: 'lightcoral'
@@ -115,18 +124,26 @@ const raws = [
   }*/
 ]
 
-const onButtonClick = e => window.open(e.target.value, '_blank')
+const onPlayButtonClick = e => window.open(e.target.value, '_blank')
+const onScoreButtonClick = e => window.open(e.target.value, '_blank')
 
-const PlayButtonz = ({ value }) => (
-  <button onClick={onButtonClick} value={value}>
+const PlayButtonz = ({ questURL, scoreURL }) => [
+  <button onClick={onPlayButtonClick} value={questURL}>
     <span role="img" aria-label="play">
       💎
     </span>{' '}
     PLAY
+  </button>,
+  <br />,
+  <button onClick={onScoreButtonClick} value={scoreURL}>
+    <span role="img" aria-label="play">
+      🥇
+    </span>{' '}
+    SCORE
   </button>
-)
+]
 
-const Cardz = ({ className, questURL, coverURL, occurAt, icon, desc, color }) => (
+const Cardz = ({ className, questURL, scoreURL, coverURL, occurAt, icon, desc, color }) => (
   <li className={className}>
     <div>
       <Coverz coverURL={coverURL} color={color} />
@@ -138,7 +155,7 @@ const Cardz = ({ className, questURL, coverURL, occurAt, icon, desc, color }) =>
           <div>{occurAt}</div>
         </div>
         <div className="action">
-          <PlayButtonz value={questURL} />
+          <PlayButtonz questURL={questURL} scoreURL={scoreURL} />
         </div>
       </div>
     </div>
