@@ -109,7 +109,7 @@ export const Enjoyz = styled.section`
   }
 `
 
-export const Appz = styled.div`
+export const Allz = styled.div`
   display: flex;
   flex-flow: row wrap;
 
