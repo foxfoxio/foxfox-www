@@ -211,7 +211,7 @@ export const Allz = styled.div`
       max-width: 40em;
       margin: auto;
 
-      .profile {
+      img {
         width: auto;
         height: 4em;
         border-radius: 50%;
@@ -224,19 +224,6 @@ export const Allz = styled.div`
         @media only screen and (min-width: 768px) {
           height: 6em;
           margin: 1em;
-        }
-      }
-
-      .badge {
-        width: 32px;
-        height: 32px;
-        display: block;
-        position: absolute;
-        margin-left: 24px;
-
-        @media only screen and (min-width: 768px) {
-          margin-left: 40px;
-          margin-top: 19px;
         }
       }
 

@@ -31,7 +31,7 @@ const Home = () => {
           <div>
             <span>Learning is </span>{' '}
             <span className="fun">
-              <img alt="fun" src="/img/fun.svg" />
+              <img alt="fun" src="/img/home/fun.svg" />
             </span>
           </div>
 
@@ -110,18 +110,17 @@ const Home = () => {
         </h3>
         <div>
           <div>
-            <img className="profile" alt="katopz" src="/img/home/katopz.jpg" />
-            <img key="badge" className="badge" alt="Certified Google Cloud Data Engineer" src="/img/home/gcp-de.png" />
+            <img alt="katopz" src="/img/home/katopz.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👨🏻‍💻
               </span>
               KATOPZ
             </span>
-            <small>Fullstack &amp; DE</small>
+            <small>Data Engineer</small>
           </div>
           <div>
-            <img className="profile" alt="ying" src="/img/home/ying.jpg" />
+            <img alt="ying" src="/img/home/ying.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👩🏻‍🔬
@@ -131,7 +130,7 @@ const Home = () => {
             <small>Data Scientist</small>
           </div>
           <div>
-            <img className="profile" alt="toy" src="/img/home/toy.jpg" />
+            <img alt="toy" src="/img/home/toy.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👨🏻‍🔬
@@ -141,14 +140,14 @@ const Home = () => {
             <small>Data Analyst</small>
           </div>
           <div>
-            <img className="profile" alt="tay" src="/img/home/tay.jpg" />
+            <img alt="tay" src="/img/home/tay.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👨🏻‍💻
               </span>
               TAY
             </span>
-            <small>Blockchain</small>
+            <small>Blockchain Dev</small>
           </div>
         </div>
       </section>
@@ -160,10 +159,11 @@ const Home = () => {
           TRUSTED BY
         </h3>
         <div>
-          <img alt="Disrupt Technology Venture" src="/img/disrupt-logo.svg" />
-          <img alt="Stormbreaker Venture" src="/img/stormbreaker-logo.svg" />
-          <img alt="สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)" src="/img/depa-logo.png" />
-          <img alt="Google Cloud for Startups" src="/img/google-startups-logo.png" />
+          <img alt="Disrupt Technology Venture" src="/img/home/disrupt-logo.svg" />
+          <img alt="Stormbreaker Venture" src="/img/home/stormbreaker-logo.svg" />
+          <img alt="สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)" src="/img/home/depa-logo.png" />
+          <img alt="Google Cloud for Startups" src="/img/home/google-startups-logo.png" />
+          <img alt="Certified Google Cloud Data Engineer" src="/img/home/gcp-de.png" />
         </div>
       </section>
       <section className="leg">
