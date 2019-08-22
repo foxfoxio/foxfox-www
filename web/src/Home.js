@@ -110,17 +110,18 @@ const Home = () => {
         </h3>
         <div>
           <div>
-            <img width="auto" alt="katopz" src="/img/home/katopz.jpg" />
+            <img className="profile" alt="katopz" src="/img/home/katopz.jpg" />
+            <img key="badge" className="badge" alt="Certified Google Cloud Data Engineer" src="/img/home/gcp-de.png" />
             <span>
               <span role="img" aria-label="Terms">
                 👨🏻‍💻
               </span>
               KATOPZ
             </span>
-            <small>Data Engineer</small>
+            <small>Fullstack &amp; DE</small>
           </div>
           <div>
-            <img width="auto" alt="ying" src="/img/home/ying.jpg" />
+            <img className="profile" alt="ying" src="/img/home/ying.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👩🏻‍🔬
@@ -130,7 +131,7 @@ const Home = () => {
             <small>Data Scientist</small>
           </div>
           <div>
-            <img width="auto" alt="toy" src="/img/home/toy.jpg" />
+            <img className="profile" alt="toy" src="/img/home/toy.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👨🏻‍🔬
@@ -140,14 +141,14 @@ const Home = () => {
             <small>Data Analyst</small>
           </div>
           <div>
-            <img width="auto" alt="tay" src="/img/home/tay.jpg" />
+            <img className="profile" alt="tay" src="/img/home/tay.jpg" />
             <span>
               <span role="img" aria-label="Terms">
                 👨🏻‍💻
               </span>
               TAY
             </span>
-            <small>Blockchain Dev</small>
+            <small>Blockchain</small>
           </div>
         </div>
       </section>
