@@ -36,3 +36,7 @@
 - [ ] User stats
 - [ ] User prediction
 - [ ] B2B Contact point
+
+## TODO
+
+- [ ] Catch page error to log

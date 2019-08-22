@@ -141,15 +141,15 @@ const onPlayButtonClick = e => window.open(e.target.value, '_blank')
 const onScoreButtonClick = e => window.open(e.target.value, '_blank')
 
 const PlayButtonz = ({ questURL, scoreURL }) => [
-  <button onClick={onPlayButtonClick} value={questURL}>
+  <button key="play" onClick={onPlayButtonClick} value={questURL}>
     <span role="img" aria-label="play">
       💎
     </span>{' '}
     PLAY
   </button>,
-  <br />,
-  <button onClick={onScoreButtonClick} value={scoreURL}>
-    <span role="img" aria-label="play">
+  <br key={Math.random()} />,
+  <button key="score" onClick={onScoreButtonClick} value={scoreURL}>
+    <span role="img" aria-label="score">
       🥇
     </span>{' '}
     SCORE
@@ -161,13 +161,13 @@ const Cardz = ({ className, questURL, scoreURL, coverURL, occurAt, icon, desc, c
     <div>
       <Coverz coverURL={coverURL} color={color} />
       <div className="detail">
-        <div className="desc">
-          <div>
+        <div key="desc" className="desc">
+          <div key="desc">
             {icon && icons[icon]} {desc}
           </div>
-          <div>{occurAt}</div>
+          <div key="occurAt">{occurAt}</div>
         </div>
-        <div className="action">
+        <div key="action" className="action">
           <PlayButtonz questURL={questURL} scoreURL={scoreURL} />
         </div>
       </div>
