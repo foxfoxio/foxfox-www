@@ -117,7 +117,7 @@ const Home = () => {
               </span>
               KATOPZ
             </span>
-            <small>Fullstack Dev</small>
+            <small>Data Engineer</small>
           </div>
           <div>
             <img width="auto" alt="ying" src="/img/home/ying.jpg" />
