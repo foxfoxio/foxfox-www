@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import MobileDetect from 'mobile-detect'
+const isMobile = new MobileDetect(window.navigator.userAgent).mobile()
+
 const Coverz = styled.div`
   background-image: ${({ coverURL }) => `url('${coverURL}')`};
   background-color: ${({ color }) => color};
@@ -95,25 +98,33 @@ const icons = {
   python: <img alt="python" src="/img/course/python.svg" />
 }
 
+const getQuestURL = id =>
+  isMobile
+    ? `
+https://line.me/R/app/1572417560-M2dWWN42?id=${id}`
+    : `https://play.foxfox.io/quiz?id=${id}`
+
+const getScoreURL = id => `https://play.foxfox.io/score?id=${id}`
+
 const raws = [
   {
-    questURL: 'https://play.foxfox.io/quiz?id=python/basic',
-    scoreURL: 'https://play.foxfox.io/score?id=quiz-python-basic',
+    questURL: getQuestURL('python/basic'),
+    scoreURL: getScoreURL('quiz-python-basic'),
     coverURL: '/img/quest/python-basic.png',
     icon: 'python',
     desc: 'Basic Python',
     color: 'darkseagreen'
   },
   {
-    questURL: 'https://play.foxfox.io/quiz?id=sql/basic',
-    scoreURL: 'https://play.foxfox.io/score?id=quiz-sql-basic',
+    questURL: getQuestURL('sql/basic'),
+    scoreURL: getScoreURL('quiz-sql-basic'),
     coverURL: '/img/quest/sql-basic.png',
     desc: 'Basic SQL',
     color: 'darkseagreen'
   },
   {
-    questURL: 'https://play.foxfox.io/quiz?id=sql/advance',
-    scoreURL: 'https://play.foxfox.io/score?id=quiz-sql-advance',
+    questURL: getQuestURL('sql/advance'),
+    scoreURL: getScoreURL('quiz-sql-advance'),
     coverURL: '/img/quest/sql-advance.png',
     desc: 'Advance SQL',
     color: 'lightcoral'
