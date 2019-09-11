@@ -162,6 +162,7 @@ const Home = () => {
           <img alt="Disrupt Technology Venture" src="/img/home/disrupt-logo.svg" />
           <img alt="Stormbreaker Venture" src="/img/home/stormbreaker-logo.svg" />
           <img alt="สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)" src="/img/home/depa-logo.png" />
+          <img alt="AWS EdStart Member" src="/img/home/aws-edstart-member.png" />
           <img alt="Google Cloud for Startups" src="/img/home/google-startups-logo.png" />
           <img alt="Certified Google Cloud Data Engineer" src="/img/home/gcp-de.png" />
         </div>
