@@ -9,10 +9,23 @@
 
 ![](https://github.com/foxfoxio/foxfox-www/raw/master/web/public/img/qr.png)
 
+## Play LIFF
+
+- https://line.me/R/app/1572417560-M2dWWN42?id=quiz-sql-basic
+- https://line.me/R/app/1572417560-M2dWWN42?id=quiz-sql-advance
+- https://line.me/R/app/1572417560-M2dWWN42?id=quiz-sql-pro
+- line://app/1572417560-M2dWWN42?id=quiz-sql-basic
+- line://app/1572417560-M2dWWN42?id=quiz-sql-advance
+- line://app/1572417560-M2dWWN42?id=quiz-sql-pro
+
 ## Score
 
-- https://foxfox.io/score?id=quiz-sql-basic
-- https://foxfox.io/score?id=quiz-sql-advance
+- https://play.foxfox.io/score?id=quiz-sql-basic
+- https://play.foxfox.io/score?id=quiz-sql-advance
+- https://play.foxfox.io/score?id=quiz-sql-pro
+- line://app/1572417560-23EqqrZk?id=quiz-sql-basic
+- line://app/1572417560-23EqqrZk?id=quiz-sql-advance
+- line://app/1572417560-23EqqrZk?id=quiz-sql-pro
 
 ## TODO - Learn
 
