@@ -28,6 +28,10 @@ const Coursez = styled.span`
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         padding: 4px;
+
+        @media only screen and (min-width: 768px) {
+          height: 223px;
+        }
       }
 
       .detail {
@@ -150,37 +154,24 @@ const icons = {
 
 const raws = [
   {
-    eventURL: 'https://www.facebook.com/events/510948563005126/',
+    eventURL: 'https://www.facebook.com/events/2471295139773410/',
     coverURL:
-      'https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.0-9/67470241_350246959221875_9037777656656953344_n.jpg?_nc_cat=106&_nc_oc=AQkoCMm20CnKOo2ofWAlTVpME_KFF1hwiFNuGO2WFnheysxDBMnCTfU6tKuSKdfGorU&_nc_ht=scontent.fbkk22-2.fna&oh=5d866ccc7654a93d4605ce8d3cf0d487&oe=5DAE9D1C',
-    occurMonth: 'AUG',
-    occurDate: '03',
-    occurAt: 'Saturday, August 3, 2019 at 13 PM – 16 PM',
-    icon: 'python',
-    desc: 'Basic Python for Everyone with Kaggle #1',
-    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
+      'https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.0-9/70793922_380080146238556_4012675304840495104_o.jpg?_nc_cat=102&_nc_eui2=AeGAZYycBcnLIbFO7ubKkPpZ90ydRINg_h1vvP9QhoQ5SzCJ2xH6D0aZM0RuI83Ja2WyWQlprZGGaSEF0wYIIPwQZKeeB4GERJ51h8QYwu_t5g&_nc_oc=AQlhWvZ4_1lMuSDWl8b1SYncVgFojaMK-bfZ1sMJLn6yO3WXZ11D0-reS1h6eCyueKk&_nc_ht=scontent.fbkk12-3.fna&oh=bc2f58fe1d0c132f70ba6821d3e977ec&oe=5E0C46EB',
+    occurMonth: 'SEP',
+    occurDate: '21',
+    occurAt: 'Saturday, September 21, 2019 9:30 AM – 11:30 AM',
+    desc: 'Learn SQL with BigQuery and Data Studio #1',
+    venue: 'Clazy Cafe BTS สนามเป้า, Bangkok'
   },
   {
-    eventURL: 'https://www.facebook.com/events/822965434771109/',
+    eventURL: 'https://www.facebook.com/events/489475831634881/',
     coverURL:
-      'https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/67912781_350244612555443_7748879729431674880_n.jpg?_nc_cat=104&_nc_oc=AQnE5Ms29SijFuOwFqOdHVzU7UklHqrb0ooE2CWoeOgV-o0WMxeMgBr55GYIvwNy5ME&_nc_ht=scontent.fbkk22-1.fna&oh=f76049adae018cab643a00d0fadac208&oe=5DA30309',
-    occurMonth: 'AUG',
-    occurDate: '04',
-    occurAt: 'Saturday, August 4, 2019 at 13 PM – 16 PM',
-    icon: 'python',
-    desc: 'Basic Python for Everyone with Kaggle #2',
-    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
-  },
-  {
-    eventURL: 'https://web.facebook.com/events/377132853183962/',
-    coverURL:
-      'https://scontent.fbkk2-7.fna.fbcdn.net/v/t1.0-9/67362259_351288142451090_8551655141923618816_o.jpg?_nc_cat=108&_nc_eui2=AeEYqPbspJjwPCHo86d9obsnvVZ3QluoLc_Z87vhCFmb2eVn-q0o_37Cm48UswHpSpwf35l7LvYIJjDPdHdKW_b6CjucD5JkAMBdq5QH7iRkDw&_nc_oc=AQnYkFGzb9SgMtxlGd77OLu_gAL2P4h0mG1nw6WO1ZNDEIeCwwckZWmHyajxZKXA4Fs&_nc_ht=scontent.fbkk2-7.fna&oh=ff6693cdaf6085481968d7ffed4bd4a8&oe=5DD4A328',
-    occurMonth: 'AUG',
-    occurDate: '04',
-    occurAt: 'Saturday, August 4, 2019 at 9 AM – 12 PM',
-    icon: 'python',
-    desc: 'Basic Python for Everyone with Kaggle #3',
-    venue: 'Too Fast To Sleep @Samyan, Rama IV Road, Si Phraya, Bang Rak, Bangkok'
+      'https://scontent.fbkk8-3.fna.fbcdn.net/v/t1.0-9/70141081_380080332905204_1823014936259854336_o.jpg?_nc_cat=111&_nc_eui2=AeEqmekPz0DDdaZlQ16Qegc55_C1BAJKWKycp3mysnSRtABKqmFfonRIvpVaTRSrnZceIkLC2llY02e3ki-hUezLu3db7Kkgfc_ccfgJkUxWsw&_nc_oc=AQnEJ1HexTGmF3jIOAyqSvWaRJJycoJ7ezL-pYxSJswpRXywhPbkyn94fHUJoAZVQvk&_nc_ht=scontent.fbkk8-3.fna&oh=870ccf42c3e7484aaa571bdf9478462e&oe=5DFA6D3D',
+    occurMonth: 'SEP',
+    occurDate: '22',
+    occurAt: 'Sunday, September 22, 2019 9:30 AM – 11:30 AM',
+    desc: 'Learn SQL with BigQuery and Data Studio #2',
+    venue: 'Clazy Cafe BTS สนามเป้า, Bangkok'
   }
 ]
 
