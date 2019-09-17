@@ -128,13 +128,14 @@ const raws = [
     coverURL: '/img/quest/sql-advance.png',
     desc: 'Advance SQL',
     color: 'lightcoral'
-  } /*,
+  },
   {
-    questURL: 'https://foxfox.io/quiz?id=sql/interview',
-    coverURL: '/img/quest/sql.png',
-    desc: 'Interview SQL',
+    questURL: getQuestURL('sql/pro'),
+    scoreURL: getScoreURL('quiz-sql-pro'),
+    coverURL: '/img/quest/sql-pro.png',
+    desc: 'Proficient SQL',
     color: 'cornflowerblue'
-  }*/
+  }
 ]
 
 const onPlayButtonClick = e => window.open(e.target.value, '_blank')
