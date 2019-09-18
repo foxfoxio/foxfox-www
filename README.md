@@ -11,12 +11,12 @@
 
 ## Play LIFF
 
-- https://line.me/R/app/1572417560-M2dWWN42?id=quiz-sql-basic
-- https://line.me/R/app/1572417560-M2dWWN42?id=quiz-sql-advance
-- https://line.me/R/app/1572417560-M2dWWN42?id=quiz-sql-pro
-- line://app/1572417560-M2dWWN42?id=quiz-sql-basic
-- line://app/1572417560-M2dWWN42?id=quiz-sql-advance
-- line://app/1572417560-M2dWWN42?id=quiz-sql-pro
+- https://line.me/R/app/1572417560-M2dWWN42?id=sql/basic
+- https://line.me/R/app/1572417560-M2dWWN42?id=sql/advance
+- https://line.me/R/app/1572417560-M2dWWN42?id=sql/pro
+- line://app/1572417560-M2dWWN42?id=sql/basic
+- line://app/1572417560-M2dWWN42?id=sql/advance
+- line://app/1572417560-M2dWWN42?id=sql/pro
 
 ## Score
 
